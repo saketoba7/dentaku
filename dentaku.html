@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>電卓</title>
+  <link rel="stylesheet" href="dentaku.css">
+</head>
+<body>
+  <container>
+      <table border="">
+        <input style="font-size: 28px; text-align: right;" / id="input"><br />
+   <tr>
+       <td><button onclick="append( '1' )" >1</button></td>
+    <td><button onclick="append( '2' )" >2</button></td>
+    <td><button onclick="append( '3' )" >3</button></td>
+    <td><button onclick="append( '4' )" >4</button></td>
+      </tr>
+        
+     <tr>
+         <td><button onclick="append( '5' )" >5</button></td>
+    <td><button onclick="append( '6' )" >6</button></td>
+    <td><button onclick="append( '7' )" >7</button></td>
+    <td><button onclick="append( '8' )" >8</button></td>
+  
+     </tr>
+  
+  <tr>
+       <td> <button onclick="append( '9' )" >9</button></td>
+   <td> <button onclick="append( '0' )" >0</button></td>
+    <td><button onclick="append( '00' )" >00</button></td>
+   <td> <button onclick="append( '.' )" >.</button></td>
+    
+  </tr>
+    
+    <tr>
+         <td> <button onclick="append( '+' )" >+</button></td>
+   <td> <button onclick="append( '-' )" >-</button></td>
+   <td> <button onclick="append( '*' )" >*</button></td>
+   <td> <button onclick="append( '/' )" >/</button></td>
+    
+    </tr>
+  
+  <tr>
+        <td　colspan="2"><button class="calc_btn" style="width:105px;"   onclick="calc()">=</button></td>
+   <td　colspan="2"> <button class="ac_btn"  onclick="update( '' ) " style="width:105px;"　>AC</button></td>
+  
+  </tr>
+  
+   </table>
+  </container>
+  
+  <script src="dentaku.js"></script>
+</body>
+</html>
